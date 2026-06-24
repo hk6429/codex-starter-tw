@@ -1,4 +1,4 @@
-# 07 AGENTS 範本
+# 08 AGENTS 範本
 
 ## 什麼是 AGENTS.md？
 在專案資料夾放一個 `AGENTS.md`，等於給 Codex 的「常駐工作須知」——每次它在這個資料夾工作都會先看一眼，照你訂的規矩做。
@@ -15,4 +15,4 @@
 ## 範本（複製到你的 AGENTS.md）
 見本資料夾的 [`AGENTS.md`](AGENTS.md)。
 
-下一步：[08 做你的 Skill](../08-做你的Skill/)
+下一步：[09 做你的 Skill](../09-做你的Skill/)

@@ -1,6 +1,8 @@
-# 06 推上 GitHub
+# 07 推上 GitHub
 
-> 🟡 **這是進階／加分關。** 現場時間不夠很正常——核心目標（裝好、登入、做出一個專案）達成就已經很棒了。這一關當**回家作業**慢慢做也完全可以。GitHub 登入授權對新手是另一個小門檻，不用急。
+> 🟡 **這是進階／加分關。** 現場時間不夠很正常——核心目標（裝好、登入、做出一個專案）達成就已經很棒了。這一關當**回家作業**慢慢做也完全可以。
+>
+> 👉 前提：先完成 [06 串接 GitHub](../06-串接GitHub/)（電腦跟 GitHub 綁定）。沒做也沒關係——下面「請 Codex 代勞」那條會在需要時直接帶你串接。
 
 把你做的網頁變成可以分享的網路作品。最簡單的方法：**讓 Codex 幫你做。**
 
@@ -18,7 +20,7 @@ Codex 會一步步帶你做，過程中可能請你在瀏覽器登入 GitHub 授
 
 ## 想自己理解：手動四步驟
 
-> 需要先安裝 Git：到 https://git-scm.com 下載 Windows 版安裝（一路下一步）。
+> 前提：已完成 [06 串接 GitHub](../06-串接GitHub/)（裝好 Git、`gh`，並 `gh auth login` 登入過）。
 
 ### 1. 初始化並提交
 在專案資料夾的 PowerShell：
@@ -29,9 +31,8 @@ git commit -m "我的第一個 Codex 作品"
 ```
 
 ### 2. 建立 GitHub repo 並推上去
-最簡單用 GitHub 官方工具 `gh`（到 https://cli.github.com 安裝）：
+用 GitHub 官方工具 `gh`（已在 [06](../06-串接GitHub/) 裝好並登入）：
 ```powershell
-gh auth login
 gh repo create my-quiz --public --source=. --push
 ```
 
@@ -47,4 +48,4 @@ gh repo create my-quiz --public --source=. --push
 ```
 完成後你會得到一個公開網址，傳給學生就能用。
 
-下一步：[07 AGENTS 範本](../07-AGENTS範本/)
+下一步：[08 AGENTS 範本](../08-AGENTS範本/)

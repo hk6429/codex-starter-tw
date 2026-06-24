@@ -1,4 +1,4 @@
-# 08 做你的 Skill
+# 09 做你的 Skill
 
 ## 什麼是 Skill？
 把你**常常重複下的指令**，包裝成一個「一鍵技能」。以後不用每次打一長串，叫名字就能用。
@@ -45,7 +45,7 @@ C:\Users\你的名字\.codex\skills\技能名字\SKILL.md
 ### 怎麼安裝這兩個範例
 把 `examples` 裡的資料夾複製到你的 `.codex\skills\`。在 codex 裡也可以直接說：
 ```
-幫我把這個 repo 的 08-做你的Skill/examples 裡兩個 skill，複製到我的 ~/.codex/skills/
+幫我把這個 repo 的 09-做你的Skill/examples 裡兩個 skill，複製到我的 ~/.codex/skills/
 ```
 
 ---
