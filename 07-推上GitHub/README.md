@@ -48,4 +48,6 @@ gh repo create my-quiz --public --source=. --push
 ```
 完成後你會得到一個公開網址，傳給學生就能用。
 
+> 💡 用 Obsidian 寫筆記的人：這套 GitHub 技能可以直接拿來**備份你的筆記庫**，見 [07b Obsidian 備份](../07b-Obsidian備份/)。
+
 下一步：[08 AGENTS 範本](../08-AGENTS範本/)
