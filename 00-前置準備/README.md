@@ -40,6 +40,20 @@ PowerShell 已經完全夠用，整堂課照 PowerShell 走就好。
 裝好後從「開始」選單開啟 Warp，第一次要用 email 或 Google 帳號**註冊一個 Warp 帳號**（免費）才能進入。
 之後想跑 Codex，就在 Warp 裡照常輸入 `codex` 即可，後面所有步驟通用。
 
+**常用編輯快速鍵（Windows）：** Warp 的複製、全選跟一般軟體不太一樣，先記一下：
+
+| 動作 | 按鍵 |
+|---|---|
+| 複製 | `Ctrl + Shift + C` |
+| 貼上 | `Ctrl + V` |
+| 全選 | `Ctrl + Shift + A` |
+| 取代選取的字 | 用滑鼠選起來 → **直接打字就覆蓋掉** |
+| 在畫面上搜尋 | `Ctrl + F` |
+
+> 複製要多按一個 `Shift`，是因為終端機把單純的 `Ctrl + C` 留給「中斷指令」用。
+>
+> 嫌麻煩？打開 **`Settings → Features → Terminal` 裡的「Copy on select」**，之後**用滑鼠選取文字就自動複製**，連按鍵都免了，對新手最友善。想改快速鍵則到 `Settings → Keyboard shortcuts` 搜尋動作重新綁定。
+
 ## 3. 你有一個 GitHub 帳號
 最後要把作品推上 GitHub。還沒有的話，先到 https://github.com 免費註冊（記住帳號和密碼）。
 （這是進階關才會用到，現在沒有也能先開始上課。）
