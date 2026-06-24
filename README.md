@@ -27,6 +27,33 @@
 | [09 做你的 Skill](09-做你的Skill/) | 把常用指令變成一鍵技能（含兩個範例） |
 | [99 常見問題與額度](99-常見問題與額度/) | 卡關排解 |
 
+### 課程地圖
+
+```mermaid
+flowchart TD
+    A[00 前置準備] --> B[01 安裝 Codex]
+    A -. 怕終端機可改走 .-> B2[01b 用 App 版]
+    B --> C[02 登入]
+    B2 --> C
+    C --> D[03 第一次對話]
+    D --> E[04 三種授權模式]
+    E --> F[05 實戰小網頁]
+    F --> CORE{{核心完成 ✅}}
+    CORE --> G[06 串接 GitHub]
+    G --> H[07 推上 GitHub]
+    H --> H2[07b Obsidian 備份]
+    CORE --> I[08 AGENTS 範本]
+    I --> J[09 做你的 Skill]
+    Q[99 常見問題與額度]
+    classDef adv fill:#fff3cd,stroke:#e0a800,color:#000;
+    classDef side fill:#eef,stroke:#88a,color:#000;
+    class G,H,H2 adv;
+    class Q side;
+```
+
+> **實線**＝主線，照順序走到「核心完成」就很棒了。
+> 黃色的 **06 → 07 → 07b** 是進階／應用支線（時間不夠可當回家作業）；**99** 卡關時隨時查。
+
 ---
 
 ## 一鍵安裝（最快）
