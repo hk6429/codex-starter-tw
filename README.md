@@ -37,6 +37,8 @@ irm https://raw.githubusercontent.com/hk6429/codex-starter-tw/main/scripts/insta
 它會自動幫你裝好 Node.js 與 Codex CLI。裝完跳到 [02 登入](02-登入/)。
 
 > 不想用一鍵安裝、想一步步理解的人，請走 [01 安裝 Codex](01-安裝Codex/)。
+>
+> 想要更好看好用的終端機？可選裝 **Warp**（`winget install Warp.Warp`），Codex 在裡面跑法一樣。詳見 [00 前置準備](00-前置準備/)。
 
 ---
 
