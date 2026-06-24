@@ -46,4 +46,16 @@ codex --version
 
 ---
 
+## 選用：換個更好用的終端機 Warp
+
+PowerShell 已經夠用。想要介面更現代、字大好複製的話，可裝免費的 **Warp**：
+
+```powershell
+winget install Warp.Warp
+```
+
+（或到 https://www.warp.dev/download 下載）裝好開 Warp、用 email／Google 免費註冊帳號後，照樣輸入 `codex` 即可。詳見 [00 前置準備](../00-前置準備/)。
+
+---
+
 下一步：[02 登入](../02-登入/)
