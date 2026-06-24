@@ -18,6 +18,8 @@ irm https://raw.githubusercontent.com/hk6429/codex-starter-tw/main/scripts/insta
 
 ![一鍵安裝完成，顯示「完成！輸入 codex 就能啟動」](../images/install-done.png)
 
+> 😌 **安裝過程會跑出一大片英文字、甚至黃色的 `npm notice`——那是正常的進度訊息，不是錯誤。** 只要最後看到綠色的「完成」、且沒有紅色 `error`，就成功了。
+
 > 若出現「無法載入指令碼，因為這個系統上已停用指令碼執行」，先跑下面這行再重試：
 > ```powershell
 > Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
@@ -26,6 +28,8 @@ irm https://raw.githubusercontent.com/hk6429/codex-starter-tw/main/scripts/insta
 ---
 
 ## B. 手動安裝（想一步步理解）
+
+> 會用到兩個東西：**Node.js** 是讓 Codex 能在你電腦上跑起來的底層引擎；**npm** 是跟著 Node.js 一起裝好的「軟體安裝器」，等一下用它把 Codex 裝上去。名字記不住沒關係，照做即可。
 
 ### 步驟 1：安裝 Node.js（22 版以上）
 到 https://nodejs.org 下載 **LTS** 版，一路下一步安裝。
