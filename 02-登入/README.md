@@ -15,12 +15,20 @@ codex
 > 畫面上也寫著「Usage included with Plus, Pro, Business…」——再次確認 **Plus 就能用**。
 
 ### 步驟 3：在瀏覽器授權
+按下登入後，PowerShell 會顯示「Finish signing in via your browser」並自動開瀏覽器。
+
+![Codex 顯示請到瀏覽器完成登入](../images/codex-auth-browser.png)
+
 - 用你的**付費 ChatGPT（Plus 或 Pro）**帳號登入。
 - 按下「授權／Authorize」。
 - 看到「登入成功，可以關閉視窗」就回到 PowerShell。
 
+> 瀏覽器沒自動跳出？回 PowerShell 把畫面上那段以 `https://auth.openai.com/...` 開頭的網址整段複製、自己貼到瀏覽器開啟即可。
+
 ### 完成
-回到 PowerShell 看到 Codex 的輸入框，就代表登入成功，用量直接吃你的付費 ChatGPT 訂閱，不另外收費。
+回到 PowerShell 看到 Codex 的輸入框（會顯示 `model: gpt-5.5`、`Sandbox ready`），就代表登入成功，用量直接吃你的付費 ChatGPT 訂閱，不另外收費。
+
+![登入完成，Codex 進入可輸入狀態](../images/codex-ready.png)
 
 ---
 
