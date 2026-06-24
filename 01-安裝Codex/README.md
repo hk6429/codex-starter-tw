@@ -16,6 +16,8 @@ irm https://raw.githubusercontent.com/hk6429/codex-starter-tw/main/scripts/insta
 
 腳本會自動檢查並安裝 Node.js 與 Codex CLI。看到「完成！輸入 codex 就能啟動」就成功了。
 
+![一鍵安裝完成，顯示「完成！輸入 codex 就能啟動」](../images/install-done.png)
+
 > 若出現「無法載入指令碼，因為這個系統上已停用指令碼執行」，先跑下面這行再重試：
 > ```powershell
 > Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
