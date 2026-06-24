@@ -1,4 +1,4 @@
-# 02 登入（用 ChatGPT Pro 帳號）
+# 02 登入（用付費 ChatGPT 帳號）
 
 ### 步驟 1：啟動 Codex
 在 PowerShell 輸入：
@@ -11,12 +11,12 @@ codex
 它會自動打開瀏覽器。
 
 ### 步驟 3：在瀏覽器授權
-- 用你的 **ChatGPT Pro** 帳號登入。
+- 用你的**付費 ChatGPT（Plus 或 Pro）**帳號登入。
 - 按下「授權／Authorize」。
 - 看到「登入成功，可以關閉視窗」就回到 PowerShell。
 
 ### 完成
-回到 PowerShell 看到 Codex 的輸入框，就代表登入成功，用量直接吃你的 Pro 訂閱，不另外收費。
+回到 PowerShell 看到 Codex 的輸入框，就代表登入成功，用量直接吃你的付費 ChatGPT 訂閱，不另外收費。
 
 ---
 
