@@ -10,6 +10,8 @@ codex
 第一次啟動會問你怎麼登入，選 **Sign in with ChatGPT**（用 ChatGPT 帳號登入）。
 它會自動打開瀏覽器。
 
+> 📸 **【待補截圖】**：Codex 第一次啟動、出現「Sign in with ChatGPT」選項的畫面。
+
 ### 步驟 3：在瀏覽器授權
 - 用你的**付費 ChatGPT（Plus 或 Pro）**帳號登入。
 - 按下「授權／Authorize」。
