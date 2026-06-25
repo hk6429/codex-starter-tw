@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>國文複習刷題</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>📖 國文複習刷題</h1>
+    <p class="sub">一題一題練，答完立刻看解析。最後可只重練答錯的題目。</p>
+  </header>
+
+  <main>
+    <!-- 開始畫面 -->
+    <section id="startView" class="card">
+      <h2>準備好了嗎？</h2>
+      <p id="bankInfo" class="muted"></p>
+      <label class="check"><input type="checkbox" id="shuffleChk" checked> 題目隨機出現</label>
+      <button id="startBtn" class="primary big">開始刷題</button>
+      <p id="bestInfo" class="muted small"></p>
+    </section>
+
+    <!-- 做題畫面 -->
+    <section id="quizView" class="card hidden">
+      <div class="bar"><div id="progress" class="bar-fill"></div></div>
+      <div class="meta">
+        <span id="counter"></span>
+        <span id="score" class="score"></span>
+      </div>
+      <p id="tag" class="tag"></p>
+      <h2 id="question"></h2>
+      <div id="options" class="options"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <button id="nextBtn" class="primary hidden">下一題 →</button>
+    </section>
+
+    <!-- 結算畫面 -->
+    <section id="resultView" class="card hidden">
+      <h2 id="resultTitle"></h2>
+      <p id="resultScore" class="big-score"></p>
+      <p id="resultMsg" class="muted"></p>
+      <div class="btns">
+        <button id="retryWrongBtn" class="primary">只重練答錯的</button>
+        <button id="restartBtn">全部重來</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

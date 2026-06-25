@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>國文大富翁</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🎲 國文大富翁</h1>
+    <p class="sub">輪流擲骰前進，踩到題目格就要答國文題：答對加前進，答錯往後退。先到終點者贏！</p>
+  </header>
+
+  <!-- 設定畫面 -->
+  <section id="setupView" class="card">
+    <h2>遊戲設定</h2>
+    <label>玩家人數
+      <select id="playerCount">
+        <option value="2">2 人</option>
+        <option value="3">3 人</option>
+        <option value="4">4 人</option>
+      </select>
+    </label>
+    <button id="startBtn" class="primary big">開始遊戲</button>
+  </section>
+
+  <!-- 遊戲畫面 -->
+  <section id="gameView" class="hidden">
+    <div id="players" class="players"></div>
+    <div id="board" class="board"></div>
+    <div class="controls">
+      <div id="turnInfo" class="turn"></div>
+      <button id="rollBtn" class="primary big">🎲 擲骰</button>
+      <div id="dice" class="dice"></div>
+      <div id="log" class="log"></div>
+    </div>
+  </section>
+
+  <!-- 題目彈窗 -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <p id="mTag" class="tag">國文題</p>
+      <h3 id="mQuestion"></h3>
+      <div id="mOptions" class="options"></div>
+      <div id="mFeedback" class="feedback hidden"></div>
+      <button id="mNext" class="primary hidden">繼續</button>
+    </div>
+  </div>
+
+  <!-- 勝利彈窗 -->
+  <div id="winModal" class="modal hidden">
+    <div class="modal-box center">
+      <h2 id="winText"></h2>
+      <button id="againBtn" class="primary big">再玩一局</button>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

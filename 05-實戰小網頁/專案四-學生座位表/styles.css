@@ -1,0 +1,95 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+header {
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: #fff;
+  padding: 20px 24px;
+}
+header h1 { font-size: 1.5rem; }
+header .sub { font-size: .9rem; opacity: .9; margin-top: 4px; }
+
+main {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 800px) { main { grid-template-columns: 1fr; } }
+
+.panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  height: fit-content;
+}
+.field { margin-bottom: 14px; }
+.field label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: 4px; color: #374151; }
+.field input, .field textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: .95rem;
+  font-family: inherit;
+}
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.btns { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e5e7eb;
+  color: #1f2937;
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+button:hover { filter: brightness(.95); }
+button.primary { background: #2563eb; color: #fff; }
+button.danger { background: #fee2e2; color: #b91c1c; }
+.hint { font-size: .8rem; color: #6b7280; }
+
+.stage { text-align: center; }
+.podium {
+  background: #1f2937;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+}
+.grid { display: grid; gap: 10px; justify-content: center; }
+.seat {
+  background: #fff;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: grab;
+  padding: 6px;
+  transition: transform .1s, box-shadow .1s;
+}
+.seat.filled { border-color: #2563eb; background: #eff6ff; }
+.seat.empty { color: #9ca3af; font-weight: 400; border-style: dashed; }
+.seat.dragover { box-shadow: 0 0 0 3px #93c5fd; transform: scale(1.04); }
+.seat .num { font-size: .65rem; color: #94a3b8; position: absolute; }
+
+@media print {
+  header .sub, .panel, .hint { display: none; }
+  main { grid-template-columns: 1fr; }
+  body { background: #fff; }
+}

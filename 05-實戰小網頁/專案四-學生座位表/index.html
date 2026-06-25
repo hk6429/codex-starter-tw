@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>學生座位表</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🪑 學生座位表</h1>
+    <p class="sub">輸入名單 → 排座 → 拖拉交換 → 列印。資料自動存在這台電腦的瀏覽器。</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <div class="field">
+        <label>班級名稱</label>
+        <input id="className" type="text" placeholder="例如：805 班">
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>每排幾人（行）</label>
+          <input id="cols" type="number" min="1" max="12" value="6">
+        </div>
+        <div class="field">
+          <label>共幾排（列）</label>
+          <input id="rows" type="number" min="1" max="12" value="5">
+        </div>
+      </div>
+
+      <div class="field">
+        <label>學生名單（一行一個名字）</label>
+        <textarea id="names" rows="8" placeholder="王小明&#10;陳大華&#10;林美麗"></textarea>
+      </div>
+
+      <div class="btns">
+        <button id="seatBtn" class="primary">依名單排座</button>
+        <button id="shuffleBtn">隨機洗座</button>
+        <button id="printBtn">列印</button>
+        <button id="clearBtn" class="danger">清空</button>
+      </div>
+      <p class="hint">小技巧：座位上的名字可以<strong>互相拖拉交換</strong>。</p>
+    </section>
+
+    <section class="stage">
+      <div class="podium">講台（黑板）</div>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

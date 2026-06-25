@@ -1,0 +1,78 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  background: #ecfdf5;
+  color: #1f2937;
+  line-height: 1.6;
+}
+header {
+  background: linear-gradient(135deg, #059669, #065f46);
+  color: #fff; padding: 20px 24px; text-align: center;
+}
+header h1 { font-size: 1.6rem; }
+header .sub { font-size: .88rem; opacity: .92; margin-top: 4px; }
+
+.card {
+  background: #fff; max-width: 420px; margin: 30px auto; padding: 28px;
+  border-radius: 16px; box-shadow: 0 4px 20px rgba(5,150,105,.12); text-align: center;
+}
+.hidden { display: none !important; }
+h2 { margin-bottom: 16px; }
+label { display: block; margin: 12px 0; font-weight: 600; }
+select { font-size: 1rem; padding: 8px 12px; border-radius: 8px; border: 1px solid #d1d5db; font-family: inherit; }
+
+.primary { background: #059669; color: #fff; border: none; border-radius: 10px;
+  padding: 11px 18px; font-size: 1rem; font-weight: 700; cursor: pointer; font-family: inherit; }
+.primary:hover { background: #047857; }
+.primary:disabled { background: #9ca3af; cursor: default; }
+.big { display: block; width: 100%; margin-top: 16px; padding: 14px; font-size: 1.1rem; }
+
+#gameView { max-width: 900px; margin: 20px auto; padding: 0 16px;
+  display: grid; grid-template-columns: 1fr 280px; gap: 20px; }
+@media (max-width: 760px) { #gameView { grid-template-columns: 1fr; } }
+
+.players { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.pchip { background: #fff; border-radius: 99px; padding: 6px 14px; font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08); border: 2px solid transparent; }
+.pchip.active { border-color: #059669; transform: scale(1.05); }
+
+.board { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.tile {
+  position: relative; aspect-ratio: 1; border-radius: 8px; padding: 4px;
+  font-size: .62rem; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; text-align: center; color: #374151; background: #f0fdf4; border: 1px solid #bbf7d0;
+}
+.tile .ti { font-size: .55rem; color: #9ca3af; position: absolute; top: 2px; left: 4px; }
+.tile.q { background: #fef9c3; border-color: #fde047; }
+.tile.bonus { background: #dbeafe; border-color: #93c5fd; }
+.tile.trap { background: #fee2e2; border-color: #fca5a5; }
+.tile.start { background: #059669; color: #fff; font-weight: 700; }
+.tile.end { background: #f59e0b; color: #fff; font-weight: 700; }
+.tokens { position: absolute; bottom: 2px; display: flex; gap: 1px; flex-wrap: wrap; justify-content: center; }
+.token { font-size: .85rem; line-height: 1; }
+
+.controls { background: #fff; border-radius: 14px; padding: 18px; box-shadow: 0 2px 10px rgba(0,0,0,.06); height: fit-content; }
+.turn { font-weight: 700; margin-bottom: 10px; text-align: center; }
+.dice { font-size: 2.4rem; text-align: center; min-height: 50px; margin: 6px 0; }
+.log { font-size: .82rem; color: #4b5563; margin-top: 10px; max-height: 160px; overflow-y: auto;
+  border-top: 1px dashed #e5e7eb; padding-top: 8px; }
+.log div { padding: 2px 0; }
+
+.tag { display: inline-block; background: #fef3c7; color: #92400e; font-size: .75rem;
+  padding: 2px 10px; border-radius: 99px; margin-bottom: 10px; }
+.options { display: flex; flex-direction: column; gap: 9px; margin-top: 6px; }
+.opt { text-align: left; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 9px;
+  padding: 11px 14px; font-size: .95rem; cursor: pointer; font-family: inherit; }
+.opt:hover { border-color: #d1d5db; }
+.opt.correct { background: #dcfce7; border-color: #16a34a; }
+.opt.wrong { background: #fee2e2; border-color: #dc2626; }
+.opt:disabled { cursor: default; }
+.feedback { margin-top: 14px; padding: 12px; border-radius: 9px; background: #f0fdf4; border-left: 4px solid #16a34a; font-size: .9rem; }
+.feedback.no { background: #fef2f2; border-color: #dc2626; }
+
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: flex;
+  align-items: center; justify-content: center; padding: 16px; z-index: 50; }
+.modal-box { background: #fff; border-radius: 16px; padding: 26px; max-width: 460px; width: 100%; }
+.modal-box.center { text-align: center; }
+.modal-box h3 { margin-bottom: 14px; }
+#mNext, #againBtn { margin-top: 16px; width: 100%; }
