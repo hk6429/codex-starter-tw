@@ -23,8 +23,10 @@
 | [06 串接 GitHub](06-串接GitHub/) ｜進階 | 把電腦跟 GitHub 綁定（推作品的前置） |
 | [07 推上 GitHub](07-推上GitHub/) ｜進階 | 把成品變成你的作品集（時間不夠可當回家作業） |
 | [07b Obsidian 備份](07b-Obsidian備份/) ｜應用 | 用剛學的 GitHub 技能備份 Obsidian 筆記 |
+| [07c 發佈上線](07c-發佈上線/) ｜應用 | 用 Codex 外掛把網頁部署到 Netlify／Vercel、拿公開網址 |
 | [08 AGENTS 範本](08-AGENTS範本/) | 給 Codex 的常駐指示 |
 | [09 做你的 Skill](09-做你的Skill/) | 把常用指令變成一鍵技能（含兩個範例） |
+| [09b 外掛做簡報](09b-外掛做簡報/) ｜應用 | 用 Presentations 外掛把文件自動變成 PPT |
 | [99 常見問題與額度](99-常見問題與額度/) | 卡關排解 |
 
 ### 課程地圖
@@ -42,17 +44,19 @@ flowchart TD
     CORE --> G[06 串接 GitHub]
     G --> H[07 推上 GitHub]
     H --> H2[07b Obsidian 備份]
+    H --> H3[07c 發佈上線<br/>Netlify／Vercel]
     CORE --> I[08 AGENTS 範本]
     I --> J[09 做你的 Skill]
+    J --> J2[09b 外掛做簡報]
     Q[99 常見問題與額度]
     classDef adv fill:#fff3cd,stroke:#e0a800,color:#000;
     classDef side fill:#eef,stroke:#88a,color:#000;
-    class G,H,H2 adv;
+    class G,H,H2,H3,J2 adv;
     class Q side;
 ```
 
 > **實線**＝主線，照順序走到「核心完成」就很棒了。
-> 黃色的 **06 → 07 → 07b** 是進階／應用支線（時間不夠可當回家作業）；**99** 卡關時隨時查。
+> 黃色的 **06 → 07 → 07b／07c** 是進階／應用支線（時間不夠可當回家作業）：**07b** 拿 GitHub 備份筆記、**07c** 用 Netlify／Vercel 把網頁部署上線；**99** 卡關時隨時查。
 >
 > 💸 好奇能不能用自己的 OpenAI API key？（本課不需要、而且會額外付費）見 [99 常見問題：改用 API key 嗎？](99-常見問題與額度/README.md#進階可以改用-api-key-嗎)
 
